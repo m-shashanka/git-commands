@@ -8,8 +8,31 @@ git add <file_names>
 
 git commit -m <message>
 
-git log --oneline
+//add to staging area and commit
+git commit -a -m <message>
 
 //modify the last commit
 git commit --amend
+
+git log --oneline
+
+//create new branch
+git branch <branch_name>
+
+//change branch to <branch>
+git switch <branch>
+git checkout <branch>
+
+//create and change branch
+git switch -c <branch>
+git checkout -b <branch>
+
+//delete branch iff it has been fully merged with upstream branch
+git branch -d <branch>
+
+//force delete branch irrespective of merge status
+git branch -D <branch>
+
+//rename the branch you are on currently
+git branch -m <new_name>
 

@@ -36,3 +36,5 @@ git branch -D <branch>
 //rename the branch you are on currently
 git branch -m <new_name>
 
+//fast-forward merge, call from receiving branch
+git merge <branch>

@@ -119,4 +119,14 @@ git revert <commit_hash>
 ---------------------------------------------------------------------------------------------
 || GITHUB BASICS ||
 ---------------------------------------------------------------------------------------------
+git clone <url>
+
+//shows all the remotes
+git remote -v
+
+//add a new remote
+git remote add <name> <url>
+
+//rename a remote
+git remote rename <old> <new>
 

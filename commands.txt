@@ -130,3 +130,5 @@ git remote add <name> <url>
 //rename a remote
 git remote rename <old> <new>
 
+//remove a remote
+git remote remove <remote_name>

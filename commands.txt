@@ -45,6 +45,12 @@ git branch -D <branch>
 //rename the branch you are on currently
 git branch -m <new_name>
 
+//see remote upstream branches
+git branch -r
+
+//create a local branch to track remote upstream branch
+git switch <remote_branch>
+
 --------------------------------------------------------------------------------------------
 || GIT MERGING ||
 --------------------------------------------------------------------------------------------
@@ -132,3 +138,24 @@ git remote rename <old> <new>
 
 //remove a remote
 git remote remove <remote_name>
+
+//push the specified branch to remote repository
+git push <remote> <branch>
+
+//remember the upstream branch, so that next time just "git push" works
+git push -u <remote> <branch>
+
+//only clones default branch, but sets up remote branches
+git clone <url>
+
+---------------------------------------------------------------------------------------------
+|| FETCHING & PULLING ||
+---------------------------------------------------------------------------------------------
+//only updates remote tracking branches without merging
+git fetch <remote>
+git fetch <remote> <branch>
+
+//call from receiving branch for merge
+git pull <remote>
+git pull <remote> <branch>
+

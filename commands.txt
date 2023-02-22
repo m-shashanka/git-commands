@@ -169,3 +169,37 @@ git rebase main
 git rebase -i HEAD~n
 
 ---------------------------------------------------------------------------------------------
+|| GIT TAGS ||
+---------------------------------------------------------------------------------------------
+//prints list of all tags in current repository
+git tag
+
+//list all tags that match the regex
+git tag -l "<regex>"
+
+git checkout <tag>
+
+git diff <tag1> <tag2>
+
+//create new lightweight tag for latest commit in current branch
+git tag <tagname>
+
+//create a new annotated tag
+git tag -a <tagname>
+
+//view meta data associated with tag
+git show <tagname>
+
+//create a tag for specific commit
+git tag <tagname> <commit_hash>
+
+//delete a tag
+git tag -d <tagname>
+
+//pushing single tag
+git push <remote> <tagname>
+
+//push all tags
+git push <remote> --tags
+
+--------------------------------------------------------------------------------------------

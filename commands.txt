@@ -159,3 +159,13 @@ git fetch <remote> <branch>
 git pull <remote>
 git pull <remote> <branch>
 
+---------------------------------------------------------------------------------------------
+|| GIT REBASE ||
+---------------------------------------------------------------------------------------------
+//re-base feature/current branch commits on to tip of main branch by rewriting commit history
+git rebase main
+
+//re-base in place i.e, rebase on to same branch head (rewrite/modify previous n commits)
+git rebase -i HEAD~n
+
+---------------------------------------------------------------------------------------------

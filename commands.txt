@@ -51,6 +51,12 @@ git branch -r
 //create a local branch to track remote upstream branch
 git switch <remote_branch>
 
+//get rid of stale branches (eg. still showing upstream branch after deletion)
+git remote prune origin
+
+//get rid of specific remote tracking branch
+git branch -d -r origin/<branch_name>
+
 --------------------------------------------------------------------------------------------
 || GIT MERGING ||
 --------------------------------------------------------------------------------------------
@@ -82,6 +88,9 @@ git diff HEAD <file_names>
 ---------------------------------------------------------------------------------------------
 //stash/save all uncommited changes (staged & unstaged) in current branch before moving to another and revert the changes in working copy
 git stash
+
+//stash a specific file
+git stash -- <file_name>
 
 //take the most recently stashed changes and appy them to working copy in any branch
 git stash pop
